@@ -1,0 +1,136 @@
+:root {
+	--milk: #f0e9e6;
+	--blue: #272e36;
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 300;
+}
+body {
+	background: var(--blue);
+	width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+}
+#root {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.bg-circle {
+	background: var(--milk);
+	position: absolute;
+	border-radius: 100%;
+	z-index: -100;
+}
+.bg-circle1 {
+	width: 40vw;
+	top: -10vw;
+	left: -20vw;
+	aspect-ratio: 1/1;
+}
+.bg-circle2 {
+	left: 10vw;
+	bottom: -0.5vw;
+	width: 20vw;
+	aspect-ratio: 1/1;
+}
+.bg-circle3 {
+	right: -4vw;
+	bottom: -4vw;
+	width: 30vw;
+	aspect-ratio: 1/1;
+}
+.bg-circle4 {
+	right: 4vw;
+	top: -4vw;
+	width: 20vw;
+	aspect-ratio: 1/1;
+}
+.App {
+	width: fit-content;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.input-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	background: transparent;
+	color: var(--milk);
+	border: none;
+	outline: none;
+	border-bottom: 2px solid var(--milk);
+	padding: 10px 5px;
+	font-size: 30px;
+}
+.bt-add {
+	width: 100%;
+	border-radius: 0px;
+	background: var(--milk);
+	border: none;
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+.bt-add:hover {
+	border-radius: 10px;
+}
+.list {
+	width: 100%;
+	background: var(--milk);
+	padding: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+.item {
+	background: var(--blue);
+	width: 100%;
+	padding: 20px;
+	color: var(--milk);
+	display: flex;
+	justify-content: space-between;
+}
+.index {
+	font-weight: 600;
+	font-size: 20px;
+	display: flex;
+	align-items: center;
+}
+.title {
+	display: flex;
+	align-items: center;
+}
+.btns {
+	display: flex;
+	gap: 10px;
+}
+.complete {
+	height: 100%;
+}
+.delete {
+	background: var(--milk);
+	border: none;
+	padding: 10px 20px;
+	transition: 0.5s;
+}
+.delete:hover {
+	border-radius: 10px;
+}
